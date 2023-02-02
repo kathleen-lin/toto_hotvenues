@@ -20,7 +20,7 @@ f.close
 
 # getting html from url
 
-for i in range (5):
+for i in range (len(listOfQueries)):
 
     url = f"https://www.singaporepools.com.sg/en/product/sr/Pages/toto_results.aspx?{listOfQueries[i]}"
     result = requests.get(url)
